@@ -2,7 +2,7 @@
   "name": "node-js",
   "version": "0.1.0",
   "description": "This is my first npm project",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Im-Mad-Panda/React-js#readme",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   }
 }
