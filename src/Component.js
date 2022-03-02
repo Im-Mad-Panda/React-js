@@ -1,9 +1,11 @@
-const num = 2+2;
+class Componemt{
+    constructor(){
+        this.main = 'hello'
+    }
 
-function mySum(a,b){
-    return a+b;
+    render(){
+        return 'Hello Webpack'
+    }
 }
 
-// sum(num,5);
-
-exports.mySum = mySum;
+module.exports = Componemt;

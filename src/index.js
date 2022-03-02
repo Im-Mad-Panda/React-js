@@ -1,14 +1,8 @@
-const _ = require('lodash');
-const {mySum} = require('./Component.js')
+// const _ = require('lodash');
+const Component = require('./Component');
+require('./css/style.css');
 
-const users = [
-    {'user': 'barney', 'age': 36, 'active': true},
-    {'user': 'fred', 'age': 40, 'active': false}
-];
+_.random();
+const container = document.getElementById('root');
 
-console.log('INDEX FILE START');
-console.log(_.filter(users,'active'));
-console.log(_.random());
-
-console.log(mySum(2,2));
-console.log('INDEX FILE END');
+container.append('And hello again');
