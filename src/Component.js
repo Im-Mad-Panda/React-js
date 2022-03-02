@@ -1,4 +1,4 @@
-class Componemt{
+class Component{
     constructor(){
         this.main = 'hello'
     }
@@ -8,4 +8,4 @@ class Componemt{
     }
 }
 
-module.exports = Componemt;
+module.exports = Component;

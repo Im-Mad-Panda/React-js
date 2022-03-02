@@ -1,5 +1,5 @@
 // const _ = require('lodash');
-const Component = require('./Component');
+const Component = require('.//Component');
 require('./css/style.css');
 
 // _.random();
