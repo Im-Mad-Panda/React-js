@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const pathToBundle = path.resolve(__dirname, "bundle");
 
-
 module.exports = {
   entry: "./src/index.js",
   plugins: [
@@ -17,15 +16,25 @@ module.exports = {
     path: pathToBundle,
     clean: true,
   },
-  mode: "development",
+  mode: "production",
   devServer: {
-      static: pathToBundle,
+    static: pathToBundle,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: [`style-loader`, "css-loader"],
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
